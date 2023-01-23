@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "public/images/logo.png";
 const Navbar = () => {
   return (
@@ -10,22 +11,29 @@ const Navbar = () => {
             Indian Society For Technical Education Odisha
           </h1>
         </div>
-        <div class="flex justify-center gap-4 bg-blue-500 p-2 my-2 rounded-md text-white text-lg">
-          <p className="nav-menu cursor-pointer">Home</p>
-          <p className="nav-menu cursor-pointer">Management</p>
+        <div class="flex justify-center gap-4 bg-blue-800 p-2 my-2 rounded-md text-white text-lg">
+          <Link href="http://www.isteonline.in" target="_blank">
+            <p className="nav-menu cursor-pointer">ISTE Official</p>
+          </Link>
+          <Link href="/">
+            <p className="nav-menu cursor-pointer">Home</p>
+          </Link>
+          <Link href="/committee">
+            <p className="nav-menu cursor-pointer">Committee</p>
+          </Link>
           <div className="dropdown dropdown-hover">
             <label tabIndex={0} className="m-1 nav-menu">
               Membership
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu p-2 shadow bg-gray-100 text-gray-900 rounded-box w-52"
+              className="dropdown-content menu p-2 shadow bg-white text-gray-900 rounded-md w-52"
             >
-              <li>
-                <a>Item 1</a>
+              <li className="">
+                <a className="p-2 hover:bg-blue-100 hover:text-blue-800">Item 1</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a className="p-2 hover:bg-blue-100 hover:text-blue-800">Item 2</a>
               </li>
             </ul>
           </div>
