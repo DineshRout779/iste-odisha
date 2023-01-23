@@ -1,27 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
-import Navbar from "components/navbar/Navbar";
-import Image from "next/image";
-import HeroBanner from "public/images/hero-banner.jpg";
-import ChairpersonPic from "public/images/chairperson.jpeg";
-import Logo from "public/images/logo.png";
+import Navbar from 'components/navbar/Navbar';
+import Image from 'next/image';
+import HeroBanner from 'public/images/hero-banner.jpg';
+import ChairpersonPic from 'public/images/chairperson.jpeg';
+import Logo from 'public/images/logo.png';
 
 export default function Home() {
   return (
     <>
       <main>
         <Navbar />
-        <div className="px-10 py-2">
+        <div className='container mx-auto max-w-[1200px] py-2 w-[95%]'>
           <Image
             src={HeroBanner.src}
-            alt="hero banner"
-            className="h-96 w-full object-cover rounded-md"
-            width={"1000"}
-            height="400"
+            alt='hero banner'
+            className='h-96 w-full object-cover rounded-md'
+            width={'1000'}
+            height='400'
           />
-          <div class="grid grid-cols-2 gap-16 my-4">
-            <div className="bg-gray-100 p-4 rounded-xl">
-              <h2 className="text-2xl font-bold">About Us</h2>
-              <p className="">
+          <div class='grid grid-cols-2 gap-16 my-4'>
+            <div className='bg-gray-100 p-4 rounded-xl'>
+              <h2 className='text-2xl font-bold'>About Us</h2>
+              <p className=''>
                 The Indian Society for Technical Education (ISTE) is the leading
                 National Professional non-profit making Society for the
                 Technical Education System in our country with the motto of
@@ -33,23 +33,29 @@ export default function Home() {
                 strength of ISTE is the strong base it has in technical
                 education institutions in the country.
               </p>
-              <Image className="mx-auto mt-2" src={Logo} alt="iste logo" width="145" height="145" />
+              <Image
+                className='mx-auto mt-2'
+                src={Logo}
+                alt='iste logo'
+                width='145'
+                height='145'
+              />
             </div>
-            <div className="bg-gray-100 p-4 rounded-xl">
-              <div className="flex gap-8 items-center">
+            <div className='bg-gray-100 p-4 rounded-xl'>
+              <div className='flex gap-8 items-center'>
                 <Image
                   src={ChairpersonPic.src}
                   alt="Prof P K Parhi's photo"
-                  className="h-44 w-auto object-cover rounded-md"
-                  width={"100"}
-                  height="100"
+                  className='h-44 w-auto object-cover rounded-md'
+                  width={'100'}
+                  height='100'
                 />
                 <div>
-                  <h2 className="text-xl font-bold">Chairperson</h2>
-                  <h2 className="text-5xl font-bold mt-4">Prof P K Parhi</h2>
+                  <h2 className='text-xl font-bold'>Chairperson</h2>
+                  <h2 className='text-5xl font-bold mt-4'>Prof P K Parhi</h2>
                 </div>
               </div>
-              <p className="mt-4">
+              <p className='mt-4'>
                 Prof Pravat Kumar Parhi, Professor, Civil Engg Department of CET
                 Bhubaneswar and Principal, IMIT Cuttack is continuing in the
                 academic profession since 1989. He obtained his Ph D degree from
