@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+	.nav-menu {
+		@apply relative tracking-[1px];
+	}
+	.nav-menu::after {
+		@apply content-[''] bg-yellow-300 h-[3px] w-[0%] left-0 -bottom-[2px] rounded-xl absolute duration-300;
+	}
+	.nav-menu:hover::after {
+		@apply w-[100%];
+	}
+}
