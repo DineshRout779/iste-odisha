@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   let menuClass = isMenuOpen
-    ? 'flex justify-center flex-col md:flex-row gap-1 md:gap-4'
+    ? 'flex justify-center flex-col md:flex-row gap-1 md:gap-4 bg-blue-800 p-4 md:p-2 my-2 rounded-md text-white text-lg'
     : 'hidden';
 
   useEffect(() => {
@@ -24,17 +24,15 @@ const Navbar = () => {
   return (
     <>
       <div className='container mx-auto max-w-[1200px] py-2 w-[95%]'>
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center justify-between md:justify-start gap-2'>
           <Image src={Logo} alt='' width='80' height='80' />
-          <h1 className='text-4xl font-bold'>
+          <h1 className='text-lg text-center md:text-left md:text-4xl font-bold'>
             Indian Society For Technical Education Odisha
           </h1>
-        </div>
 
-        <div className='flex justify-center flex-col md:flex-row gap-1 md:gap-4 bg-blue-800 p-2 my-2 rounded-md text-white text-lg'>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className='btn btn-square bg-transparent hover:bg-blue-900 md:hidden'
+            className='btn btn-square bg-gray-100 hover:bg-gray-300 md:hidden border-none'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -43,7 +41,7 @@ const Navbar = () => {
               className='inline-block w-5 h-5 stroke-current'
             >
               <path
-                color='white'
+                color='#333'
                 strokeLinecap='round'
                 strokeLinejoin='round'
                 strokeWidth='2'
@@ -51,53 +49,53 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
+        </div>
 
-          <div className={menuClass}>
-            <Link
-              href='http://www.isteonline.in'
-              target='_blank'
-              className='nav-menu p-1'
+        <div className={menuClass}>
+          <Link
+            href='http://www.isteonline.in'
+            target='_blank'
+            className='nav-menu p-1'
+          >
+            ISTE Official
+          </Link>
+          <Link href='/' className='nav-menu p-1'>
+            Home
+          </Link>
+          <Link href='/committee' className='nav-menu p-1'>
+            Committee
+          </Link>
+          <div className='dropdown dropdown-hover p-1'>
+            <label tabIndex={0} className=' nav-menu cursor-pointer'>
+              Membership
+            </label>
+            <ul
+              tabIndex={0}
+              className='dropdown-content w-72 menu shadow p-2 text-sm bg-white text-gray-900 rounded-md'
             >
-              ISTE Official
-            </Link>
-            <Link href='/' className='nav-menu p-1'>
-              Home
-            </Link>
-            <Link href='/committee' className='nav-menu p-1'>
-              Committee
-            </Link>
-            <div className='dropdown dropdown-hover p-1'>
-              <label tabIndex={0} className=' nav-menu cursor-pointer'>
-                Membership
-              </label>
-              <ul
-                tabIndex={0}
-                className='dropdown-content w-72 menu shadow p-2 text-sm bg-white text-gray-900 rounded-md'
-              >
-                <li className=''>
-                  <Link
-                    target='_blank'
-                    href='https://forms.gle/Ei9EVRhTt5mD3PHg6'
-                    className='text-zinc-900 font-bold hover:text-blue-800'
-                  >
-                    ISTE Faculty Chapter Registration
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    target='_blank'
-                    href='https://forms.gle/dUvHZ6MA1wA3vpAm6'
-                    className='text-zinc-900 font-bold hover:text-blue-800'
-                  >
-                    ISTE Students Chapter Registration
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <p className='nav-menu cursor-pointer p-1'>Gallery</p>
-            <p className='nav-menu cursor-pointer p-1'>Notice</p>
-            <p className='nav-menu cursor-pointer p-1'>Contact Us</p>
+              <li className=''>
+                <Link
+                  target='_blank'
+                  href='https://forms.gle/Ei9EVRhTt5mD3PHg6'
+                  className='text-zinc-900 font-bold hover:text-blue-800'
+                >
+                  ISTE Faculty Chapter Registration
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target='_blank'
+                  href='https://forms.gle/dUvHZ6MA1wA3vpAm6'
+                  className='text-zinc-900 font-bold hover:text-blue-800'
+                >
+                  ISTE Students Chapter Registration
+                </Link>
+              </li>
+            </ul>
           </div>
+          <p className='nav-menu cursor-pointer p-1'>Gallery</p>
+          <p className='nav-menu cursor-pointer p-1'>Notice</p>
+          <p className='nav-menu cursor-pointer p-1'>Contact Us</p>
         </div>
       </div>
     </>

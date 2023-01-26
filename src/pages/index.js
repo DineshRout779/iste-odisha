@@ -14,11 +14,11 @@ export default function Home() {
           <Image
             src={HeroBanner.src}
             alt='hero banner'
-            className='h-96 w-full object-cover rounded-md'
+            className='h-[360px] w-full object-cover rounded-md'
             width={'1000'}
-            height='400'
+            height='360'
           />
-          <div className='grid grid-cols-2 gap-16 my-4'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-16 my-4'>
             <div className='bg-gray-100 p-4 rounded-xl'>
               <h2 className='text-2xl font-bold'>About Us</h2>
               <p className=''>
@@ -42,17 +42,19 @@ export default function Home() {
               />
             </div>
             <div className='bg-gray-100 p-4 rounded-xl'>
-              <div className='flex gap-8 items-center'>
+              <div className='flex gap-4 md:gap-8 items-center'>
                 <Image
                   src={ChairpersonPic.src}
                   alt="Prof P K Parhi's photo"
-                  className='h-44 w-auto object-cover rounded-md'
+                  className='h-20 md:h-36 w-auto object-cover rounded-md'
                   width={'100'}
                   height='100'
                 />
                 <div>
-                  <h2 className='text-xl font-bold'>Chairperson</h2>
-                  <h2 className='text-5xl font-bold mt-4'>Prof P K Parhi</h2>
+                  <h2 className='text-sm font-bold'>Chairperson</h2>
+                  <h2 className='text-xl md:text-2xl lg:text-3xl font-bold mt-4'>
+                    Prof P K Parhi
+                  </h2>
                 </div>
               </div>
               <p className='mt-4'>
