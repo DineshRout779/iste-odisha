@@ -18,7 +18,7 @@ export default function Home() {
             width={'1000'}
             height='400'
           />
-          <div class='grid grid-cols-2 gap-16 my-4'>
+          <div className='grid grid-cols-2 gap-16 my-4'>
             <div className='bg-gray-100 p-4 rounded-xl'>
               <h2 className='text-2xl font-bold'>About Us</h2>
               <p className=''>
