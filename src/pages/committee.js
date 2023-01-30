@@ -3,12 +3,13 @@ import Navbar from "components/navbar/Navbar";
 import PratapsinhKakasoDesaiPic from "public/committeeMembers/PratapsinhKakasoDesaiPic.jpg";
 import VijayVaidyaPic from "public/committeeMembers/VijayVaidyaPic.jpg"
 import PravatParhi from "public/committeeMembers/PravatKumarParhiPic.jpg"
-import IpsitaJena from "public/committeeMembers/DrIpsitaJena.jpg"
+import IpsitaJena from "public/committeeMembers/DrIpsitaJena.png"
 import PrabhatSingh from "public/committeeMembers/PKSinghPic.jpg"
 import ArunPatnaik from "public/committeeMembers/DrArunPatnaikPic.jpg"
 import PKSatpathy from "public/committeeMembers/DrPKSatpathyPic.jpg"
 import SyedAli from "public/committeeMembers/DrSMAliPic.jpg"
 import ManasSenapati from "public/committeeMembers/DrManasRanjanSenapatiPic.jpg"
+import KKRout from "public/committeeMembers/KKRout.jpg"
 
 const committeeData = {
   president: {
@@ -41,7 +42,7 @@ const committeeData = {
     pincode: "751029",
   },
   secretary: {
-    photo: "",
+    photo: KKRout,
     position: "Secretary",
     name: "Dr. K.K. Rout",
     designation: "Principal",

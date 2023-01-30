@@ -44,7 +44,7 @@ const PhotoGallery = () => {
       <Navbar />
       <div className="container mx-auto max-w-[1200px] py-2 w-[95%]">
         <h2 className="py-4 underline underline-offset-8 text-4xl text-center font-bold">ISTE Odisha Photo Gallery</h2>
-        <div className="grid gap-4 grid-cols-3">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {galleryData.map((item) => (
             <Image
               key={item.src}

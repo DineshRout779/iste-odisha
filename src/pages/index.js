@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container mx-auto max-w-[1200px] py-2 w-[95%]">
           <Image
             src={HeroBanner.src}
-            alt="hero banner"
+            alt="Conference photo by Wan San Yip"
             className="h-[360px] w-full object-cover rounded-md"
             width={"1000"}
             height="360"
