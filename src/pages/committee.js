@@ -1,8 +1,18 @@
 import CommitteeMemberCard from "components/committeeMember/CommitteeMemberCard";
 import Navbar from "components/navbar/Navbar";
+import PratapsinhKakasoDesaiPic from "public/committeeMembers/PratapsinhKakasoDesaiPic.jpg";
+import VijayVaidyaPic from "public/committeeMembers/VijayVaidyaPic.jpg"
+import PravatParhi from "public/committeeMembers/PravatKumarParhiPic.jpg"
+import IpsitaJena from "public/committeeMembers/DrIpsitaJena.jpg"
+import PrabhatSingh from "public/committeeMembers/PKSinghPic.jpg"
+import ArunPatnaik from "public/committeeMembers/DrArunPatnaikPic.jpg"
+import PKSatpathy from "public/committeeMembers/DrPKSatpathyPic.jpg"
+import SyedAli from "public/committeeMembers/DrSMAliPic.jpg"
+import ManasSenapati from "public/committeeMembers/DrManasRanjanSenapatiPic.jpg"
 
 const committeeData = {
   president: {
+    photo: PratapsinhKakasoDesaiPic,
     position: "President, ISTE",
     name: "Prof.  Pratapsinh Kakaso Desai",
     phoneNumber: ["09422422450", "08237447711"],
@@ -11,6 +21,7 @@ const committeeData = {
     pincode: "416012",
   },
   executiveSecretary: {
+    photo: VijayVaidyaPic,
     position: "Executive Secretary, ISTE",
     name: "Prof. Vijay D. Vaidya",
     phoneNumber: ["09422046567 "],
@@ -19,16 +30,18 @@ const committeeData = {
     pincode: "416012",
   },
   chairperson: {
+    photo: PravatParhi,
     position: "Chairperson",
     name: "Prof. Pravat Kumar Parhi",
     designation: "Professor, Civil Engg. Dept",
     phoneNumber: ["9437176889"],
-    email: ["pkparhi@cet.edu.in, pkparhi@yahoo.com"],
+    email: ["pkparhi@outr.ac.in"],
     address:
       "Odisha University of Technology & Research(formerly CET Bhubaneswar) Bhubaneswar",
     pincode: "751029",
   },
   secretary: {
+    photo: "",
     position: "Secretary",
     name: "Dr. K.K. Rout",
     designation: "Principal",
@@ -40,20 +53,23 @@ const committeeData = {
   },
   managingCommittee: [
     {
+      photo: IpsitaJena,
       name: "Prof. Ispita Jena",
       address: "SVSET, Chaitanya Prasad, Madanpur, Bhubaneswar",
       phoneNumber: ["9776291567"],
       pincode: "752054",
-      email: [],
+      email: ["ipsitajena08@gmail.com"],
     },
     {
+      photo: PrabhatSingh,
       name: "Shri Prabhat Kumar Singh",
       address: "SVSET, Chaitanya Prasad, Madanpur, Bhubaneswar",
-      phoneNumber: ["9040634968"],
+      phoneNumber: ["8249035429"],
       pincode: "752054",
-      email: [],
+      email: ["sprabhatkumar99@gmail.com"],
     },
     {
+      photo: ArunPatnaik,
       name: "Dr. Arun Kumar Patnaik",
       address: "N-2/126, IRC Village, Nayapalli, Bhubaneswar",
       pincode: "751015",
@@ -61,6 +77,7 @@ const committeeData = {
       email: ["arunpatnaik1954@gmail.com"],
     },
     {
+      photo: PKSatpathy,
       name: "Prof. P.K. Satpathy",
       address:
         "Odisha University of Technology & Research(formerly CET Bhubaneswar) Bhubaneswar",
@@ -71,6 +88,7 @@ const committeeData = {
   ],
   executiveCouncil: [
     {
+      photo: SyedAli,
       name: "Dr. Syed Majid Ali",
       address: "Wajid Manzil, Kesharpur, Cuttack",
       pincode: "753001",
@@ -78,6 +96,7 @@ const committeeData = {
       email: ["drsma786@gmail.com"],
     },
     {
+      photo: ManasSenapati,
       name: "Dr. Manas Ranjan Senapati",
       designation: "Professor & HOD, Chemistry",
       address:
@@ -94,35 +113,35 @@ const Committee = () => {
     <div>
       <Navbar />
       <div className="container mx-auto max-w-[1200px] py-2 w-[95%]">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <CommitteeMemberCard {...committeeData["president"]} />
           <CommitteeMemberCard {...committeeData["executiveSecretary"]} />
         </div>
 
-        <h2 className="text-center text-2xl font-bold my-4 p-2 underline underline-offset-8">
+        <h2 className="text-center text-2xl font-bold my-4 p-2 underline underline-offset-8 text-blue-800">
           ISTE ODISHA SECTION MANAGING COMMITTEE (2020-2024)
         </h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <CommitteeMemberCard {...committeeData["chairperson"]} />
           <CommitteeMemberCard {...committeeData["secretary"]} />
         </div>
 
-        <h2 className="text-xl font-bold my-4 p-2">
+        <h2 className="text-xl font-bold my-4 p-2 text-blue-800">
           LIST OF MANAGING COMMITTEE MEMEBERS
         </h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {committeeData["managingCommittee"].map((item) => (
             <CommitteeMemberCard key={item.name} {...item} />
           ))}
         </div>
 
-        <h2 className="text-xl font-bold my-4 p-2">
+        <h2 className="text-xl font-bold my-4 p-2 text-blue-800">
           LIST OF EXECUTIVE COUNCIL MEMBERS
         </h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {committeeData["executiveCouncil"].map((item) => (
             <CommitteeMemberCard key={item.name} {...item} />
           ))}
