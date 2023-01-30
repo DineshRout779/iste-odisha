@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className='container mx-auto max-w-[1200px] py-2 w-[95%]'>
         <div className='flex items-center justify-between md:justify-start gap-2'>
           <Image src={Logo} alt='' width='80' height='80' />
-          <h1 className='text-lg text-center md:text-left md:text-4xl font-bold'>
+          <h1 className='text-xl text-center md:text-left md:text-4xl font-bold'>
             Indian Society For Technical Education Odisha
           </h1>
 
@@ -93,8 +93,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p className='nav-menu cursor-pointer p-1'>Gallery</p>
+          <p className='nav-menu cursor-pointer p-1'>Photo Gallery</p>
           <p className='nav-menu cursor-pointer p-1'>Notice</p>
+          <p className='nav-menu cursor-pointer p-1'>Chapters</p>
           <p className='nav-menu cursor-pointer p-1'>Contact Us</p>
         </div>
       </div>
