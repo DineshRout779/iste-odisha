@@ -93,7 +93,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p className='nav-menu cursor-pointer p-1'>Photo Gallery</p>
+          <Link href='/photoGallery' className='nav-menu cursor-pointer p-1'>Photo Gallery</Link>
           <p className='nav-menu cursor-pointer p-1'>Notice</p>
           <p className='nav-menu cursor-pointer p-1'>Chapters</p>
           <p className='nav-menu cursor-pointer p-1'>Contact Us</p>
