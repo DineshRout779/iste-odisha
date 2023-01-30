@@ -10,16 +10,19 @@ const CommitteeMemberCard = ({
   designation,
   photo,
 }) => {
-  console.log(photo)
+  console.log(photo);
   return (
     <div className="bg-gray-100 p-4 rounded-xl font-bold grid grid-cols-5 gap-1 items-center">
       {/* <image /> */}
       <figure className="p-4 col-span-2">
         <Image
-          src={photo.src} alt={`${name}'s Photo`}
+          src={photo.src}
+          alt={`${name}'s Photo`}
           className="rounded-xl object-cover"
           width={200}
           height={200}
+          placeholder="blur"
+          blurDataURL={photo.blurDataURL}
         />
       </figure>
       <div className="col-span-3">
