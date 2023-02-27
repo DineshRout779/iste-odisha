@@ -94,7 +94,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link href='/photoGallery' className='nav-menu cursor-pointer p-1'>Photo Gallery</Link>
-          <p className='nav-menu cursor-pointer p-1'>Notice</p>
+          <Link href='/notice' className='nav-menu cursor-pointer p-1'>Notice</Link>
           <p className='nav-menu cursor-pointer p-1'>Chapters</p>
           <Link href='/contactUs' className='nav-menu cursor-pointer p-1'>Contact Us</Link>
         </div>
