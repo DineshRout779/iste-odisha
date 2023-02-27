@@ -96,7 +96,7 @@ const Navbar = () => {
           <Link href='/photoGallery' className='nav-menu cursor-pointer p-1'>Photo Gallery</Link>
           <p className='nav-menu cursor-pointer p-1'>Notice</p>
           <p className='nav-menu cursor-pointer p-1'>Chapters</p>
-          <p className='nav-menu cursor-pointer p-1'>Contact Us</p>
+          <Link href='/contactUs' className='nav-menu cursor-pointer p-1'>Contact Us</Link>
         </div>
       </div>
     </>

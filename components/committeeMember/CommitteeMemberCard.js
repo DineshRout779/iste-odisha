@@ -10,11 +10,10 @@ const CommitteeMemberCard = ({
   designation,
   photo,
 }) => {
-  console.log(photo);
   return (
-    <div className="bg-gray-100 p-4 rounded-xl font-bold grid grid-cols-5 gap-1 items-center">
+    <div className="bg-gray-100 p-4 rounded-xl font-bold grid grid-cols-5 gap-1 items-center justify-center">
       {/* <image /> */}
-      <figure className="p-4 col-span-2">
+      <figure className="p-4 col-span-5 sm:col-span-2 flex justify-center">
         <Image
           src={photo.src}
           alt={`${name}'s Photo`}
