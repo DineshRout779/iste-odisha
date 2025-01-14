@@ -19,12 +19,38 @@ export default function Home() {
             width={"1000"}
             height="360"
           />
-          <div className="bg-amber-100 p-2 rounded-md border-l-8 border-orange-500 my-4">
-            Proposals are invited from ISTE Chapters of Engineering Schools and
-            Engineering Colleges of Odisha to organise Annual ISTE Section Level
-            Students Convention and Annual ISTE Section Level Faculty Convention
-            for the year : 2022-23.{" "}
-            <Link href="/notice" className="font-bold underline underline-offset-4">Read More...</Link>
+
+          <div className="mt-4 p-4 bg-white rounded-lg shadow shadow-red-500 border-gray-200">
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-bold text-gray-800">
+                  ISTE Convention Proposals
+                </h2>
+                <div className="flex items-center text-gray-600 text-sm">
+                  <span>8th Feb, 2025</span>
+                </div>
+              </div>
+
+              <p className="text-sm text-gray-600 line-clamp-2">
+                Proposals are invited from ISTE Chapters of Engineering Schools
+                and Engineering Colleges of Odisha to organise Annual ISTE
+                Section Level Students Convention and Faculty Convention for
+                2025.
+              </p>
+
+              <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+                <p className="text-sm font-medium">Last date: 8th Feb, 2025</p>
+              </div>
+
+              <div className="flex items-center justify-start pt-2">
+                <Link
+                  href="/notice"
+                  className="text-blue-600 hover:text-blue-800 inline-flex items-center text-sm font-medium transition-colors duration-200"
+                >
+                  Read More
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 my-4">
             <div className="bg-gray-100 p-4 rounded-xl">
