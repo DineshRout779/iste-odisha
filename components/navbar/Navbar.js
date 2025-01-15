@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   let menuClass = isMenuOpen
-    ? "flex justify-center flex-col md:flex-row gap-1 md:gap-4 bg-blue-800 p-4 md:p-2 my-2 rounded-md text-white text-lg"
+    ? "flex justify-center flex-col md:flex-row gap-1 md:gap-4 bg-[#00254e] p-4 md:p-2 my-2 rounded-md text-white text-lg"
     : "hidden";
 
   useEffect(() => {
@@ -25,8 +25,10 @@ const Navbar = () => {
     <>
       <div className="container mx-auto max-w-[1200px] py-2 w-[95%]">
         <div className="flex items-center justify-between md:justify-start gap-2">
-          <Image src={Logo} alt="" width="80" height="80" />
-          <h1 className="text-xl text-center md:text-left md:text-4xl font-bold">
+          <Link href={"/"}>
+            <Image src={Logo} alt="" width="80" height="80" />
+          </Link>
+          <h1 className="text-xl text-center md:text-left md:text-4xl font-bold text-[#00254e]">
             Indian Society For Technical Education Odisha
           </h1>
 

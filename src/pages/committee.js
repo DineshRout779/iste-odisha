@@ -1,15 +1,15 @@
 import CommitteeMemberCard from "components/committeeMember/CommitteeMemberCard";
 import Navbar from "components/navbar/Navbar";
+import ArunPatnaik from "public/committeeMembers/DrArunPatnaikPic.jpg";
+import IpsitaJena from "public/committeeMembers/DrIpsitaJena.png";
+import ManasSenapati from "public/committeeMembers/DrManasRanjanSenapatiPic.jpg";
+import PKSatpathy from "public/committeeMembers/DrPKSatpathyPic.jpg";
+import SyedAli from "public/committeeMembers/DrSMAliPic.jpg";
+import KKRout from "public/committeeMembers/KKRout.jpg";
+import PrabhatSingh from "public/committeeMembers/PKSinghPic.jpg";
 import PratapsinhKakasoDesaiPic from "public/committeeMembers/PratapsinhKakasoDesaiPic.jpg";
-import VijayVaidyaPic from "public/committeeMembers/VijayVaidyaPic.jpg"
-import PravatParhi from "public/committeeMembers/PravatKumarParhiPic.jpg"
-import IpsitaJena from "public/committeeMembers/DrIpsitaJena.png"
-import PrabhatSingh from "public/committeeMembers/PKSinghPic.jpg"
-import ArunPatnaik from "public/committeeMembers/DrArunPatnaikPic.jpg"
-import PKSatpathy from "public/committeeMembers/DrPKSatpathyPic.jpg"
-import SyedAli from "public/committeeMembers/DrSMAliPic.jpg"
-import ManasSenapati from "public/committeeMembers/DrManasRanjanSenapatiPic.jpg"
-import KKRout from "public/committeeMembers/KKRout.jpg"
+import PravatParhi from "public/committeeMembers/PravatKumarParhiPic.jpg";
+import VijayVaidyaPic from "public/committeeMembers/VijayVaidyaPic.jpg";
 
 const committeeData = {
   president: {
@@ -120,7 +120,7 @@ const Committee = () => {
         </div>
 
         <h2 className="text-center text-2xl font-bold my-4 p-2 underline underline-offset-8 text-blue-800">
-          ISTE ODISHA SECTION MANAGING COMMITTEE (2020-2024)
+          ISTE ODISHA SECTION MANAGING COMMITTEE (2020 - Present)
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
