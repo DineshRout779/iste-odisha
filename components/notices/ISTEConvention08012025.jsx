@@ -1,4 +1,16 @@
+"use client";
+
 export default function ISTEConvention08012025() {
+  const handleDownload = () => {
+    if (typeof window !== "undefined") {
+      window.open(
+        "https://docs.google.com/document/d/1JmQsk3Zt_c_PXQHB9jHnopnMUcikAnZd/edit?usp=sharing&ouid=103992238130266655295&rtpof=true&sd=true",
+        "_blank",
+        "noopener noreferrer"
+      );
+    }
+  };
+
   return (
     <div className=" p-6 bg-white rounded-lg shadow-lg border border-gray-200 font-medium">
       <div className="space-y-6">
@@ -66,6 +78,13 @@ export default function ISTEConvention08012025() {
             </p>
           </div>
         </div>
+
+        <button
+          onClick={handleDownload}
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          <span>Download Notice</span>
+        </button>
 
         <div className="text-right text-gray-600 italic">
           Secretary
