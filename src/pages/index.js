@@ -26,7 +26,7 @@ export default function Home() {
                   ISTE Convention Proposals
                 </h2>
                 <div className="flex items-center text-gray-600 text-sm">
-                  <span>8th Feb, 2025</span>
+                  <span>8th January, 2025</span>
                 </div>
 
                 <p className="text-sm text-gray-600 line-clamp-2">

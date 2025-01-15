@@ -15,26 +15,6 @@ const Notice = () => {
 
         <div className="flex flex-col gap-4">
           <ISTEConvention08012025 />
-
-          <div className="bg-amber-100 p-2 rounded-md border-l-8 border-orange-500">
-            <p className="flex justify-end">1st February, 2023</p>
-            <p>
-              Proposals are invited from ISTE Chapters of Engineering Schools
-              and Engineering Colleges of Odisha to organise Annual ISTE Section
-              Level Students Convention and Annual ISTE Section Level Faculty
-              Convention for the year : 2022-23.
-            </p>
-            <p className="font-bold">
-              Last date of sending proposal to ISTE Section Chairman
-              (pkparhi@outr.ac.in) with cc to ISTE Section Secretary
-              (Khirodrout@yahoo.co.in) is 4th March, 2023.
-            </p>
-            <p>
-              Partial financial grant of Rs 25000/- and Rs 30000/- will be
-              admissible by ISTE after successful completion of the program to
-              host the Students Convention and Faculty Convention respectively.
-            </p>
-          </div>
         </div>
       </div>
     </div>
