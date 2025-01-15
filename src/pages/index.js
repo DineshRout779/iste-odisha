@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import { galleryData } from "@/utils/constants";
+import ImageCarousel from "components/common/ImageCarousel";
 import Navbar from "components/navbar/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import ChairpersonPic from "public/images/chairperson.jpeg";
-import HeroBanner from "public/images/hero-banner.jpg";
 import Logo from "public/images/logo.png";
 
 export default function Home() {
@@ -12,46 +13,47 @@ export default function Home() {
       <main>
         <Navbar />
         <div className="container mx-auto max-w-[1200px] py-2 w-[95%]">
-          <Image
-            src={HeroBanner.src}
-            alt="Conference photo by Wan San Yip"
-            className="h-[360px] w-full object-cover rounded-md"
-            width={"1000"}
-            height="360"
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="col-span-1 md:col-span-2 lg:col-span-3">
+              <ImageCarousel images={galleryData} />
+            </div>
 
-          <div className="mt-4 p-4 bg-white rounded-lg shadow shadow-red-500 border-gray-200">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
+            <div className="p-4 bg-white rounded-lg shadow shadow-red-500 border-red-500 border-2 col-span-1">
+              <div className="space-y-4">
+                <div className="badge badge-error">Latest Notice</div>
+
                 <h2 className="text-lg font-bold text-gray-800">
                   ISTE Convention Proposals
                 </h2>
                 <div className="flex items-center text-gray-600 text-sm">
                   <span>8th Feb, 2025</span>
                 </div>
-              </div>
 
-              <p className="text-sm text-gray-600 line-clamp-2">
-                Proposals are invited from ISTE Chapters of Engineering Schools
-                and Engineering Colleges of Odisha to organise Annual ISTE
-                Section Level Students Convention and Faculty Convention for
-                2025.
-              </p>
+                <p className="text-sm text-gray-600 line-clamp-2">
+                  Proposals are invited from ISTE Chapters of Engineering
+                  Schools and Engineering Colleges of Odisha to organise Annual
+                  ISTE Section Level Students Convention and Faculty Convention
+                  for 2025.
+                </p>
 
-              <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
-                <p className="text-sm font-medium">Last date: 8th Feb, 2025</p>
-              </div>
+                <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+                  <p className="text-sm font-medium">
+                    Last date: 8th Feb, 2025
+                  </p>
+                </div>
 
-              <div className="flex items-center justify-start pt-2">
-                <Link
-                  href="/notice"
-                  className="text-blue-600 hover:text-blue-800 inline-flex items-center text-sm font-medium transition-colors duration-200"
-                >
-                  Read More
-                </Link>
+                <div className="flex items-center justify-start pt-2">
+                  <Link
+                    href="/notice"
+                    className="text-blue-600 hover:text-blue-800 inline-flex items-center text-sm font-medium transition-colors duration-200"
+                  >
+                    Read More
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 my-4">
             <div className="bg-gray-100 p-4 rounded-xl">
               <h2 className="text-2xl font-bold">About ISTE</h2>

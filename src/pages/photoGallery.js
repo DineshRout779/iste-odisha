@@ -1,37 +1,8 @@
+import { galleryData } from "@/utils/constants";
 import Navbar from "components/navbar/Navbar";
 import Image from "next/image";
 import { useCallback, useState } from "react";
 import ImageViewer from "react-simple-image-viewer";
-
-const galleryData = [
-  "gallery/GalleryPic1.jpg",
-  "gallery/GalleryPic2.jpg",
-  "gallery/GalleryPic3.jpg",
-  "gallery/GalleryPic4.jpg",
-  "gallery/GalleryPic5.jpg",
-  "gallery/GalleryPic6.jpg",
-  "gallery/GalleryPic7.jpg",
-  "gallery/GalleryPic8.jpg",
-  "gallery/GalleryPic9.jpg",
-  "gallery/GalleryPic10.jpg",
-  "gallery/GalleryPic11.jpg",
-  "gallery/GalleryPic12.jpg",
-  "gallery/GalleryPic13.jpg",
-  "gallery/GalleryPic14.jpg",
-  "gallery/GalleryPic15.jpg",
-  "gallery/GalleryPic16.jpg",
-  "gallery/GalleryPic17.jpg",
-  "gallery/GalleryPic18.jpg",
-  "gallery/GalleryPic19.jpg",
-  "gallery/GalleryPic20.jpg",
-  "gallery/GalleryPic21.jpg",
-  "gallery/GalleryPic22.jpg",
-  "gallery/GalleryPic23.jpg",
-  "gallery/GalleryPic24.jpg",
-  "gallery/GalleryPic25.jpg",
-  "gallery/GalleryPic26.jpg",
-  "gallery/GalleryPic27.jpg",
-];
 
 const PhotoGallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
