@@ -31,8 +31,26 @@ const CommitteeMemberCard = ({
         {designation && <p>{designation}</p>}
         {address && <p>{address}</p>}
         {pincode && <p>PIN: {pincode}</p>}
-        {phoneNumber && <p>{phoneNumber.join(", ")}</p>}
-        {email && <p>{email.join(", ")}</p>}
+        {phoneNumber && (
+          <p>
+            {phoneNumber.map((number, index) => (
+              <a key={index} href={`tel:${number}`} className="text-blue-800">
+                {number}
+                {index < phoneNumber.length - 1 ? ", " : ""}
+              </a>
+            ))}
+          </p>
+        )}
+        {email && (
+          <p>
+            {email.map((mail, index) => (
+              <a key={index} href={`mailto:${mail}`} className="text-blue-800">
+                {mail}
+                {index < email.length - 1 ? ", " : ""}
+              </a>
+            ))}
+          </p>
+        )}
       </div>
     </div>
   );

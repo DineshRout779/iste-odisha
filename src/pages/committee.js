@@ -5,7 +5,6 @@ import IpsitaJena from "public/committeeMembers/DrIpsitaJena.jpg";
 import ManasSenapati from "public/committeeMembers/DrManasRanjanSenapatiPic.jpg";
 import PKSatpathy from "public/committeeMembers/DrPKSatpathyPic.jpg";
 import DrSMAli from "public/committeeMembers/DrSMAli.jpg";
-import SyedAli from "public/committeeMembers/DrSMAliPic.jpg";
 import KKRout from "public/committeeMembers/KKRout.jpg";
 import PrabhatSingh from "public/committeeMembers/PKSinghPic.jpg";
 import PratapsinhKakasoDesaiPic from "public/committeeMembers/PratapsinhKakasoDesaiPic.jpg";
@@ -26,6 +25,8 @@ const committeeData = {
     position: "Executive Secretary, ISTE",
     name: "Dr S M Ali",
     email: ["exesecretary@isteonline.org", "iste.exesecretary@gmail.com"],
+    address: "Wajid Manzil, Kesharpur, Cuttack",
+    pincode: "753001",
   },
   chairperson: {
     photo: PravatParhi,
@@ -85,14 +86,6 @@ const committeeData = {
     },
   ],
   executiveCouncil: [
-    {
-      photo: SyedAli,
-      name: "Dr. Syed Majid Ali",
-      address: "Wajid Manzil, Kesharpur, Cuttack",
-      pincode: "753001",
-      phoneNumber: ["9831805748"],
-      email: ["drsma786@gmail.com"],
-    },
     {
       photo: ManasSenapati,
       name: "Dr. Manas Ranjan Senapati",
