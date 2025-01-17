@@ -4,12 +4,12 @@ import ArunPatnaik from "public/committeeMembers/DrArunPatnaikPic.jpg";
 import IpsitaJena from "public/committeeMembers/DrIpsitaJena.jpg";
 import ManasSenapati from "public/committeeMembers/DrManasRanjanSenapatiPic.jpg";
 import PKSatpathy from "public/committeeMembers/DrPKSatpathyPic.jpg";
+import DrSMAli from "public/committeeMembers/DrSMAli.jpg";
 import SyedAli from "public/committeeMembers/DrSMAliPic.jpg";
 import KKRout from "public/committeeMembers/KKRout.jpg";
 import PrabhatSingh from "public/committeeMembers/PKSinghPic.jpg";
 import PratapsinhKakasoDesaiPic from "public/committeeMembers/PratapsinhKakasoDesaiPic.jpg";
 import PravatParhi from "public/committeeMembers/PravatKumarParhiPic.jpg";
-import VijayVaidyaPic from "public/committeeMembers/VijayVaidyaPic.jpg";
 
 const committeeData = {
   president: {
@@ -22,13 +22,10 @@ const committeeData = {
     pincode: "416012",
   },
   executiveSecretary: {
-    photo: VijayVaidyaPic,
+    photo: DrSMAli,
     position: "Executive Secretary, ISTE",
-    name: "Prof. Vijay D. Vaidya",
-    phoneNumber: ["09422046567 "],
-    email: ["vijayvaidya09@gmail.com", "exseciste@gmail.com"],
-    address: "2548-B, Ward Mangalwar PethKhasbag, Bharat Dairy RoadKolhapur",
-    pincode: "416012",
+    name: "Dr S M Ali",
+    email: ["exesecretary@isteonline.org", "iste.exesecretary@gmail.com"],
   },
   chairperson: {
     photo: PravatParhi,
